@@ -967,3 +967,64 @@ p{color:#bbb;font-size:1.1rem;}
   0% { left: 0; }
   100% { left: 200px; } /* stops sliding before fully leaving */
 }
+/* ================= MOBILE-FRIENDLY OVERRIDES ================= */
+@media(max-width: 992px){
+  /* Hero section */
+  .hero {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 80px 20px !important;
+    text-align: center !important;
+  }
+  .hero-content {
+    padding-left: 0 !important;
+    padding-top: 100px !important;
+    max-width: 90% !important;
+  }
+  .hero-content h1 { font-size: 2rem !important; line-height: 1.2 !important; }
+  .hero-buttons { flex-direction: column !important; gap: 15px !important; align-items: center !important; }
+
+  /* Grids */
+  .about-grid, .services-grid, .team-grid,
+  .experience-layout, .work-layout, .build-layout {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+    gap: 30px !important;
+  }
+
+  /* Overlay Menu */
+  .overlay-left, .overlay-right { padding: 20px !important; }
+  .overlay-left ul { gap: 20px !important; flex-direction: column !important; }
+  .overlay-left ul li a { font-size: 1.3rem !important; }
+
+  /* Featured & Brutalist cards */
+  .featured-container .box { width: 90% !important; height: auto !important; }
+  .brutalist-card { width: 90% !important; padding: 1rem !important; margin: 20px auto !important; }
+
+  /* Hero decorations */
+  .hero-background { background-size: 20px 20px !important; }
+  .dodecahedron { width: 150px !important; height: 150px !important; }
+  .top-right { top: -20% !important; right: -20% !important; }
+  .bottom-left { bottom: -20% !important; left: -20% !important; }
+
+  /* Icons */
+  .icons-grid { grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)) !important; gap: 30px !important; }
+  .icon-wrapper { font-size: 60px !important; }
+
+  /* Preloader & rectangle animation */
+  .words { gap: 10px !important; margin-bottom: 40px !important; }
+  .word { font-size: 1.2rem !important; }
+  .rectangle-container { width: 150px !important; height: 40px !important; }
+  .text-mask { width: 120px !important; }
+  .ashley-text { font-size: 1rem !important; }
+}
+
+@media(max-width: 768px){
+  /* Further adjustments for small phones */
+  .hero-content h1 { font-size: 1.8rem !important; }
+  .btn { font-size: 0.95rem !important; padding: 12px 24px !important; }
+  .dodecahedron { display: none !important; }
+  .hero-background { display: none !important; }
+  .featured-container .box, .brutalist-card { width: 95% !important; }
+  .overlay-left ul li a { font-size: 1.1rem !important; }
+}
