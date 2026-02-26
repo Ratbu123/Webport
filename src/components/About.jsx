@@ -1,3 +1,5 @@
+import Me from "./assets/Images/Me.jpg";
+
 export default function About() {
   return (
     <section className="section" id="about">
@@ -6,7 +8,7 @@ export default function About() {
         {/* IMAGE + INTRO */}
         <div className="about-layout fade-up-stagger">
           <div className="about-image fade-item">
-            <img src="src/assets/Images/Me.jpg" alt="Me" />
+            <img src={Me} alt="Me" />
           </div>
 
           <div className="about-content fade-item">
