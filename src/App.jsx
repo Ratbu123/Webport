@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import useSmoothScroll from "./assets/hooks/useSmoothScroll";
 import useStaggeredFadeUp from "./assets/hooks/useStaggeredfadeUp";
+import CustomCursor from "./components/CustomCursor";
+import Cursor from "./components/Cursor";
 
 function App() {
   useSmoothScroll();
@@ -24,6 +26,7 @@ function App() {
       )}
 
       {/* App is ALWAYS mounted */}
+      <CustomCursor />
       <Header />
       <Hero />
       <About />
